@@ -372,6 +372,60 @@ li {
 	box-shadow: 5px 5px 0px 0px #0ee951;
 }
 
+/***********************/
+/*     Portfolio       */
+/***********************/
+#portfolio {
+    background-color: var(--primary);
+    color: white;
+    padding: 80px 0;
+}
+
+#portfolio .headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#portfolio .para {
+    opacity: 0.7;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#portfolio .btn-tertiary {
+    color: white;
+    border-radius: 0;
+    border-width: 2px;
+    padding: 10px 30px;
+    border-image-slice: 1;
+    background-image: none;
+    background: transparent;
+    border-image-source: var(--gradient);
+    box-shadow: 5px 5px 0px 0px var(--secondary);
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .btn-tertiary:hover {
+    color: white;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 30px;
+    transform: translate(5px, 5px);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #portfolio .headline {
+        font-size: 2rem;
+    }
+
+    #portfolio .para {
+        width: 90%;
+    }
+}
+
 
 /*****************/
 /*     Plans     */
@@ -718,4 +772,86 @@ li {
 		width: 22px;
 		background-size: 22px 34px;
 	}
+}
+
+
+
+
+/**********************/
+/* Terms and Conditions */
+/**********************/
+.terms-conditions {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.terms-conditions h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.terms-conditions h2,
+.terms-conditions h3 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.terms-conditions p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.terms-conditions ul {
+    padding-left: 20px;
+}
+
+.terms-conditions li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.terms-conditions a {
+    color: #00aaff; /* Light blue for links */
+    text-decoration: underline;
+}
+
+.terms-conditions a:hover {
+    color: #ffffff; /* White on hover for contrast */
+    text-decoration: none;
+}
+
+/* Footer */
+.footer-1 {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-1 a {
+    color: #ffffff; /* White color for links */
+    font-size: 16px;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-1 a:hover {
+    color: #00aaff; /* Light blue for hover effect */
+}
+
+/* Adjustments for other elements if necessary */
+body {
+    color: #ffffff; /* Ensure text color is white for general content */
+    background-color: #000000; /* Black background for the entire page */
+}
+
+.navbar, .footer-1 {
+    background-color: #000000; /* Black background for navbar and footer */
+    color: #ffffff; /* White text color for navbar and footer */
 }
